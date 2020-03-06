@@ -65,6 +65,23 @@
 4.0 - ELEMENTS 
 -------------------------------------------------------------- */
 
+#home {
+        text-align:center;
+}
+
+a, a:visited, header p {
+        color:white;
+        text-decoration:none;
+}
+
+/* -- MEDIA -- */
+
+#bg-home {
+        background-image: url("../img/bg-home.jpeg");
+        background-size:cover;
+        background-position:center;
+}
+
 /* -- FORMS -- */ 
 
 
@@ -77,8 +94,29 @@
 6.0 COMPONENTS
 -------------------------------------------------------------- */
 
+/* -- NAVIGATION --*/
+
+li {
+        display:inline-block;
+}
 
 /*--------------------------------------------------------------
 7.0 UTILITIES
 -------------------------------------------------------------- */
 
+.row {
+        overflow:auto;
+}
+
+.wrapper {
+        width:1178px;;
+        margin:0 auto;
+}
+
+.flt-right {
+        float:right;
+}
+
+.flt-left {
+        float:left;
+}
