@@ -58,7 +58,7 @@
         -o-box-sizing: border-box;
         -ms-box-sizing: border-box;
         box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
+        
     }
 
 
@@ -66,14 +66,30 @@
 4.0 - ELEMENTS 
 -------------------------------------------------------------- */
 
-#bg-home, #bg-home + div, #bg-about {
-        text-align:center;
+
+
+
+
+blockquote {
+        border-top: #BDBDBD 1px solid;
+        border-bottom: #BDBDBD 1px solid;
 }
 
-a, a:visited, header p {
-        color:#fff;
-        text-decoration:none;
+caption {
+        display:none;
 }
+
+table {
+        width:100%;
+        border-collapse:collapse;
+}
+
+thead {
+        border-bottom: #BDBDBD 1px solid;
+        text-align:left;
+}
+
+
 
 
 
@@ -91,14 +107,40 @@ a, a:visited, header p {
         background-position:center;
 }
 
+#bg-take-action {
+        background-image:url("../img/bg-take-action.jpg");
+        background-size:cover;
+        background-position:center;
+}
+
 
 /* -- LISTS --*/
-#bg-home li, #bg-about li, #bg-take-action li {
+#bg-home li, #bg-about li, #bg-take-action li, footer li {
         display:inline-block;
 }
 
 /* -- FORMS -- */ 
+label {
+        display:block;
+}
 
+form {
+        width:550px;
+        margin:0 auto;
+}
+
+fieldset {
+        border:none;
+        text-align:left;
+}
+
+.col-form {
+        width:250px;
+}
+
+input[id="email"], input[id="get-involved"] {
+        width:550px;
+}
 
 /*--------------------------------------------------------------
 5.0 OBJECTS
@@ -109,7 +151,16 @@ a, a:visited, header p {
 6.0 COMPONENTS
 -------------------------------------------------------------- */
 
-nav, .btn, body > footer, h2, #bg-about {
+a, a:visited, #bg-about p, #bg-home p, #bg-take-action p {
+        color:#fff;
+        text-decoration:none;
+}
+
+#bg-home, #bg-home + div, #bg-about, blockquote, footer, #bg-take-action, #bg-take-action + div, legend {
+        text-align:center;
+}
+
+nav, .btn, body > footer, h2, #bg-about, #bg-about + .wrapper:first-of-type .about-col-1-2:first-child li:nth-child(2), th, label {
         text-transform: uppercase;
 }
 
@@ -131,6 +182,40 @@ body > footer {
 
 .about-col-1-2:nth-of-type(2) {
         width:780px;
+}
+
+blockquote p:first-child, blockquote footer, h2, th, label {
+        color:#BDBDBD;
+}
+
+.achievements-col-1-2 {
+        width:342px;
+}
+
+col:nth-of-type(2) {
+        border-right: #BDBDBD 1px solid;
+        border-left: #BDBDBD 1px solid;
+        width:336px;
+}
+
+col:nth-of-type(3) {
+        border-right: #BDBDBD 1px solid;
+}
+
+col:nth-child(1), col:nth-child(3), col:nth-child(4) {
+        width:150px;
+}
+
+tbody tr:nth-of-type(even) {
+        background-color:#F2F2F2;
+}
+
+.col-1-3 {
+        width:371px;
+}
+
+#bg-home p:first-of-type {
+        font-family: 'Montserrat', sans-serif;
 }
 
 
