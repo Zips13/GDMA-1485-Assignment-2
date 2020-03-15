@@ -58,6 +58,7 @@
         -o-box-sizing: border-box;
         -ms-box-sizing: border-box;
         box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
     }
 
 
@@ -65,14 +66,16 @@
 4.0 - ELEMENTS 
 -------------------------------------------------------------- */
 
-#home {
+#bg-home, #bg-home + div, #bg-about {
         text-align:center;
 }
 
 a, a:visited, header p {
-        color:white;
+        color:#fff;
         text-decoration:none;
 }
+
+
 
 /* -- MEDIA -- */
 
@@ -80,6 +83,18 @@ a, a:visited, header p {
         background-image: url("../img/bg-home.jpeg");
         background-size:cover;
         background-position:center;
+}
+
+#bg-about {
+        background-image:url("../img/bg-about.jpg");
+        background-size:cover;
+        background-position:center;
+}
+
+
+/* -- LISTS --*/
+#bg-home li, #bg-about li, #bg-take-action li {
+        display:inline-block;
 }
 
 /* -- FORMS -- */ 
@@ -94,10 +109,47 @@ a, a:visited, header p {
 6.0 COMPONENTS
 -------------------------------------------------------------- */
 
+nav, .btn, body > footer, h2, #bg-about {
+        text-transform: uppercase;
+}
+
+nav a:hover, .btn-white:hover, body > footer:hover {
+        color:#1F1F1F;
+} 
+
+.col-home-about-action {
+        width:513px;
+}
+
+body > footer {
+        background-color: #1F1F1F;
+}
+
+.about-col-1-2:first-child {
+        width:230px;
+}
+
+.about-col-1-2:nth-of-type(2) {
+        width:780px;
+}
+
+
+
 /* -- NAVIGATION --*/
 
-li {
+/* -- BUTTONS -- */
+.btn {
+        padding: 10px 20px;
+        border-radius:50px;
         display:inline-block;
+}
+
+.btn-white {
+        border: #fff 2px solid;
+}
+
+.btn-white:hover {
+        background-color:#fff;
 }
 
 /*--------------------------------------------------------------
@@ -109,7 +161,7 @@ li {
 }
 
 .wrapper {
-        width:1178px;;
+        width:1178px;
         margin:0 auto;
 }
 
@@ -119,4 +171,8 @@ li {
 
 .flt-left {
         float:left;
+}
+
+.btn-green, .sprite-bar {
+        background-color:#36B3AC;
 }
